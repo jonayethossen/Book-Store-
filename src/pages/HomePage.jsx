@@ -1,3 +1,9 @@
+import Hero from "../components/Hero";
+
 export default function HomePage() {
-  return <div>Jonyet hossen </div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
