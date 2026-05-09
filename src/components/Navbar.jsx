@@ -1,37 +1,30 @@
+import logo from "../assets/logo.jpg";
 export default function Navbar() {
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Catalogue", path: "/catalogue" },
+    { name: "Registration", path: "/registration" },
+    { name: "Login", path: "/login" },
+  ];
   return (
-    <nav className="bg-white shadow-md p-4 flex items-center justify-between">
+    <nav className="bg-white shadow-md px-4 py-4 flex items-center justify-between sticky top-0 z-50">
       {/* left sight for logo */}
       <div className="flex-shrink-0">
-        <img
-          src="../../public/book-store_logo.png"
-          alt="Logo"
-          className="h-8 w-auto"
-        />
+        <a href="/">
+          <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
+        </a>
       </div>
       {/* center position item */}
-      <div className="flex space-x-6">
-        <a href="/" className="text-gray-700 hover:text-blue-500 font-medium">
-          Home
-        </a>
-        <a
-          href="/catalogue"
-          className="text-gray-700 hover:text-blue-500 font-medium"
-        >
-          Catalogue
-        </a>
-        <a
-          href="/registration"
-          className="text-gray-700 hover:text-blue-500 font-medium"
-        >
-          Registration
-        </a>
-        <a
-          href="/login"
-          className="text-gray-700 hover:text-blue-500 font-medium"
-        >
-          Login
-        </a>
+      <div className="hidden md:flex space-x-6">
+        {navItems.map((item) => (
+          <a
+            key={item.name}
+            href={item.path}
+            className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200"
+          >
+            {item.name}
+          </a>
+        ))}
       </div>
       {/* rightt site */}
       <div>
