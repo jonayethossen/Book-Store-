@@ -12,19 +12,16 @@ export default function Hero() {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2000",
-      title: "Discover Your Next Adventure",
     },
     {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2000",
-      title: "Knowledge at Your Fingertips",
     },
     {
       id: 3,
       image:
         "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2000",
-      title: "The Best Collection of 2026",
     },
   ];
 

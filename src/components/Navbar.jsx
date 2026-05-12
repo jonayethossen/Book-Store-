@@ -25,7 +25,7 @@ export default function Navbar() {
               <NavLink
                 key={item.name}
                 to={item.path}
-                className="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="text-primary-text hover:text-hover-text font-medium transition-colors duration-200"
               >
                 {item.name}
               </NavLink>

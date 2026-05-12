@@ -1,2 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --color-primary-text: var(--color-gray-600);
+  --color-hover-text: var(--color-blue-600);
+}
+@layer base {
+  body {
+    @apply bg-white;
+    color: var(--color-primary-text);
+    font-family: "Inter", sans-serif;
+  }
+}
