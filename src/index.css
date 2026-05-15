@@ -6,6 +6,12 @@
   --color-hover-text: var(--color-blue-600);
 }
 @layer base {
+  /* *,
+  ::before,
+  ::after {
+    border-color: var(--color-gray-200, currentColor);
+    color: var(--color-primary-text);
+  } */
   body {
     @apply bg-white;
     color: var(--color-primary-text);

@@ -37,13 +37,13 @@ export default function MembersProfiel() {
           <RiTeamFill />
           <h1>Members Profile</h1>
         </div>
-        <div className="flex gap-6 text-white">
+        <div className="flex gap-6 text-primary-text">
           {members.map((member) => (
             <div key={member.id} className="card bg-base-100 w-96 shadow-sm ">
               <figure>
                 <img src={member.image} alt={member.Name} />
               </figure>
-              <div className="card-body">
+              <div className="card-body ">
                 <h2 className="card-title">{member.Name}</h2>
                 <p>{member.role}</p>
               </div>
