@@ -70,7 +70,7 @@ export default function Navbar() {
 
         {/* Mobile Sidebar/Menu */}
         <div
-          className={`md:hidden absolute left-0 w-full bg-white border-b transition-all duration-300 ease-in-out ${isOpen ? "top-[100%] opacity-100 visible" : "top-[120%] opacity-0 invisible"}`}
+          className={`md:hidden absolute left-0 w-full bg-white border-b transition-all duration-300 ease-in-out ${isOpen ? "top-full opacity-100 visible" : "top-[120%] opacity-0 invisible"}`}
         >
           <div className="flex flex-col p-6 space-y-4">
             {navItems.map((item) => (
